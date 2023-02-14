@@ -5,13 +5,13 @@ const assert = require('assert')
 const abi = require("./compile").abi
 const bytecode = require("./compile").evm.bytecode.object
 //Mnemonics of the account you want to deploy it from
-const mnemonicPhrase = 'tank raw grow install work push track badge burst mix silent pear'
+const mnemonicPhrase = //enter account mnemonics here
 //setting up infura using our mnemonics and hdwallet-provider
 const provider = new HDWalletProvider({
  mnemonic:{
     phrase:mnemonicPhrase
  },
- providerOrUrl:'https://goerli.infura.io/v3/09ebb8ee1cd8451ea0251eaeddda3a6e'
+ providerOrUrl://enter infura goerli endpoint here
 })
 //using the provider created with infura
 const web3 = new Web3(provider)
